@@ -1,4 +1,4 @@
-package com.apex_data_collect.apexanalyticsaop;
+package com.chinapex.data.analyticsaop;
 
 import org.junit.Test;
 
