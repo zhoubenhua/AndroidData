@@ -1,0 +1,3 @@
+rootProject.name='ApexDataCollectSample'
+include ':app'
+include ':apexanalyticsaop'

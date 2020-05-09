@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".activity.MainActivity">
+
+        <Button
+            android:id="@+id/bt_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="test" />
+
+        <EditText
+            android:id="@+id/et_input_inner_pid"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:hint="请输入innerPid"
+            android:lines="1"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_set_inner_pid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_input_inner_pid"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="setInnerPid"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_2fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_test"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="跳转到FragmentActivity"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_2rv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_2fragment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="跳转到ListRvActivity"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/et_input_visit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_2rv_list"
+            android:hint="visitId" />
+
+        <Button
+            android:id="@+id/bt_set_session_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_input_visit_id"
+            android:text="设置visitId"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/et_input_app_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_2rv_list"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:hint="appLanguage" />
+
+        <Button
+            android:id="@+id/bt_set_app_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_input_app_language"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="设置appLanguage"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_2rv_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="发送延时事件" />
+
+        <Button
+            android:id="@+id/bt_instant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_delay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="发送即时事件" />
+
+        <Button
+            android:id="@+id/bt_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_instant"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="登入" />
+
+        <Button
+            android:id="@+id/bt_2_menu_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_signIn"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="menuActivity"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_2_test_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TestActivity"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_custom_click_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bt_2rv_list"
+            android:onClick="eat"
+            android:text="eat"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_custom_click_method2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bt_2rv_list"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="play"
+            android:text="play"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_signOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_instant"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/bt_signIn"
+            android:layout_toRightOf="@+id/bt_signIn"
+            android:text="登出" />
+
+
+        <Button
+            android:id="@+id/bt_setLocaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_signOut"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="设置Location"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_click_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_setLocaction"
+            android:layout_centerHorizontal="true"
+            android:text="去测试点击事件" />
+
+        <RelativeLayout
+            android:id="@+id/rl_custom_click3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bt_click_test"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="reClick" />
+
+        <TextView
+            android:id="@+id/tv_test1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_custom_click3"
+            android:text="test1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_test1"
+            android:text="test2"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_test2"
+            android:text="test3"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_test4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_test3"
+            android:text="test4"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_test5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_test4"
+            android:text="test5"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_test6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_test5"
+            android:clickable="true"
+            android:text="test6"
+            android:textSize="30sp" />
+        <TextView
+            android:layout_below="@+id/tv_test6"
+            android:text="9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成本比一般市场价格低30%
+            ，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成本比一般市场价格低
+            30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成本比一般市场价格
+            低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成本比一般市场
+            价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成本比一般市
+            场价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成本比一般
+            市场价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成本比一
+            般市场价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。成
+            本比一般市场价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作。
+            成本比一般市场价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动作
+            。成本比一般市场价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及动
+            作。成本比一般市场价格低30%，节约用时约1-2天。9天内采集129,248张人脸照片，照片涉及6,000余人，每人20个不同表情及
+            动作。成本比一般市场价格低30%，节约用时约1-2天。"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</ScrollView>
